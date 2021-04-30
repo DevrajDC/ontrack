@@ -1,0 +1,137 @@
+.about {
+  padding: 4rem;
+}
+.about-banner {
+  margin-top: 2rem;
+  border-radius: 12px;
+  display: flex;
+  background: #1e314e;
+  padding: 2rem 3rem;
+  align-items: center;
+}
+.about-banner svg {
+  height: 300px;
+  width: 300px;
+}
+.about-banner-text {
+  padding: 0 3rem;
+}
+.about-banner-text h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+.about-banner-text p {
+  color: #99b2d8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.about-container {
+  margin: 3rem 0 2rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.about-container > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.about-container-left h3,
+.about-container-right h3 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+.about-container-left p {
+  color: #99b2d8;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about-container-right > * {
+  margin-bottom: 1.5rem;
+}
+.about-container-right p {
+  color: #99b2d8;
+  font-size: 1rem;
+  padding-right: 5rem;
+}
+.about-team-container {
+  margin: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.about-join {
+  text-align: center;
+  margin: 4rem 0 2rem 0;
+}
+.about-join h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.about-join p {
+  color: #99b2d8;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 848px) {
+  .about {
+    padding: 4rem 1.5rem;
+  }
+  .about-banner {
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-banner svg {
+    margin-bottom: 1.5rem;
+  }
+  .about-banner-text h1 {
+    font-size: 1.5rem;
+  }
+  .about-banner-text p {
+    font-size: 0.9rem;
+  }
+  .about-banner-text button {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-container > *:not(:last-child) {
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .about-container-right p {
+    padding: 0;
+  }
+  .team-card {
+    flex-direction: row !important;
+    padding: 1rem !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+  .team-card img {
+    width: 35%;
+    margin-right: 1rem;
+  }
+  .team-card h1 {
+    margin-top: 0 !important;
+    margin-bottom: 0.1rem !important;
+  }
+  .team-card div {
+    text-align: left;
+  }
+  .team-socials {
+    justify-content: flex-start !important;
+  }
+  .team-card svg {
+    margin: 0.75rem 1rem 0 0 !important;
+  }
+  .about-team-container {
+    gap: 20px;
+  }
+}
